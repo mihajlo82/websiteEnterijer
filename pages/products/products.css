@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+/* js hidden menu */
+
+.active-hidden{
+    border: 3px solid rgb(68, 68, 68);
+}
+.hidden-menu-js{
+ display: none;
+ position: fixed;
+ top: 0;
+ left:0;
+ bottom: 0;
+ right: 0;
+ background-color: rgb(255, 255, 255);
+ z-index: 10;
+}
+
+.top-hidden-menu{
+ height: 20vh;
+ width: 100vw;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 30px;
+ padding-top: 10px;
+}
+
+.hidd-close-logo{
+ width: 44px;
+ height: 44px;
+}
+
+.hidd-close-logo:hover{
+ transform: scale(1.2);
+}
+
+.nav-hidd{
+ width:  100vw;
+ height: 80vh;
+}
+
+.nav-hidd ul{
+ width: 100%;
+ height: 100%;
+}
+
+.nav-hidd ul li{
+ width: 100%;
+ height: 15%;
+ border-bottom: 1px solid black;    
+}
+
+.nav-hidd ul li:hover{
+ border: 1px solid rgb(129, 129, 129);
+}
+
+.nav-hidd ul li a{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ font-size: 1.35rem;
+ color: rgb(68, 68, 68);
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.nav-hidd ul li a:hover{
+ color: rgb(129, 129, 129);
+}
+/* js hidden menu END */
+
+
+.navigation .active{
+    border: 1px solid white;
+     padding: 12px;
+     background-color: white;
+     color: rgb(53, 25, 1);
+     font-style: italic;
+     font-weight: 700;
+     border-radius: 5px;
+ }
+
+ body{
+     width: 100vw;
+     background: url('../../images/background-brown.png');
+
+ }
+
+.about{
+    width: 100%;
+    /* height: 100vh; */
+    /* background: url('../../images/background-brown.png'); */
+}
+/* ///////////////////////// HEADER STYLING //////////////////////////////////// */
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 17vh;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.header-left{
+    width: 34%;
+    height:100%;
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .logo{
+            width: 250px;
+            height: 100px;
+            background: url("../../images/ent-org.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+.header-right{
+    width: 66%;
+    height:100%;
+    display: flex;
+}
+
+        .navigation{
+            width: 100%;
+            height: 100%;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation a{
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        /* .navigation a:hover{
+           
+        } */
+        .hidden-menu{
+            width: 25%;
+            height: 100%;
+            /* background-color: rgb(204, 0, 255); */
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        /* header END */
+
+        .main-products{
+            position: absolute;
+            top: 17%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-prod-inner{
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            margin-top: 30px;
+            justify-content: center;
+            
+        }
+
+
+        .prod-item1{
+            margin: 20px;
+            width: 550px;
+            height: 400px;
+            position: relative;
+            border: 4px solid white;
+            border-radius: 5px;
+            /* font-family: 'Architects Daughter', cursive; */
+        }
+
+        .prod-item{
+            background: url("../../images/about-close.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .prod-item2{
+            background: url("../../images/images.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .prod-item3{
+            background: url("../../images/i5.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .prod-item4{
+            background: url("../../images/i2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .prod-item5{
+            background: url("../../images/i3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .prod-item6{
+            background: url("../../images/i4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .prod-item7{
+            background: url("../../images/i7.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .prod-item8{
+            background: url("../../images/i8.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .prod1-hover{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgb(110, 110, 110);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            opacity: 0.85;
+ 
+
+        }
+
+        .prod1-hover h3{
+            text-align: center;
+            widtH: 100%;
+            font-size: 1.6rem;
+        }
+
+        .prod1-hover p{
+            text-align: center;
+            widtH: 100%;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        .prod1-hover a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 2px solid white;
+            padding: 10px;
+            color: white;
+            margin-top: 35px;
+            background-color: rgb(73, 231, 24);
+            
+        }
+
+        .button-holder{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .btnn{
+            text-decoration: none;
+            font-size: 1.25rem;
+            background-color: rgb(57, 236, 12);
+            padding: 20px;
+            border-radius: 9px;
+            color: white;
+            font-style: italic;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        
+
+        /*/////////////////////////////////////
+               ABOUT RESPONSIVE
+        //////////////////////////////////// */
+        @media screen and (max-width: 1254px){          
+        .prod-item1{
+            margin: 20px;
+            width: 450px;
+            height: 300px;
+            position: relative;
+            border: 4px solid white;
+            border-radius: 5px;
+            }
+        }
+        @media screen and (max-width: 1124px){
+
+            .navigation{
+                width: 100%;
+            }
+        
+            .navigation a{
+                font-size: 1.35rem;
+            }
+        }
+
+        @media screen and (max-width: 1054px){          
+            .prod-item1{
+                margin: 20px;
+                width: 350px;
+                height: 270px;
+                position: relative;
+                border: 4px solid white;
+                border-radius: 5px;
+               
+            }
+        }
+        
+        @media screen and (max-width: 948px){
+            .navigation a{
+                font-size: 1.25rem;
+            }
+        }
+        @media screen and (max-width: 948px){
+            .prod-item1{
+                margin: 11px;
+                width: 330px;
+                height: 240px;
+            }
+        }
+
+        @media screen and (max-width: 823px){
+            .navigation {
+                display: none;
+            }
+
+            .logo{
+                width: 220px;
+                height: 80px;
+            }
+        
+            .hidden-menu{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+        
+            .header-left{
+                width: 50%;
+            }
+        
+            .header-right{
+                width: 50%;
+            }
+        
+        }
+        
+        @media screen and (max-width: 781px){
+            .prod-item1{
+                margin: 10px;
+                width: 290px;
+                height: 220px;
+            }
+        }
+
+        @media screen and (max-width: 686px){
+            .prod-item1{
+                margin: 5px;
+                width: 250px;
+                height: 200px;
+            }
+
+            .prod1-hover h3{
+                font-size: 1.35rem;
+            }
+    
+            .prod1-hover p{
+                font-size: 1.05rem;
+            }
+            .btnn{
+                font-size: 1.15rem;
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 586px){
+            .main-prod-inner{
+                padding: 4px;
+                padding-top: 40px;
+                
+            }
+
+            .prod1-hover h3{
+                font-size: 1.2rem;
+            }
+    
+            .prod1-hover p{
+                font-size: 0.95rem;
+            }
+
+         }
+
+         @media screen and (max-width: 530px){
+
+            .prod-item1{
+                margin: 3px;
+                width: 200px;
+                height: 170px;
+            }
+
+            .main-prod-inner{
+                padding: 1px;
+                padding-top: 30px;
+                
+            }
+            .logo{
+                width: 120px;
+                height: 90px;
+                margin-top: 10px;
+                }
+         }
+
+         @media screen and (max-width: 444px){
+            .prod-item1{
+                margin: 2px;
+                width: 190px;
+                height: 160px;
+            }
+
+            .burger-menu{
+                width: 37px;
+                height: 37px;
+            }
+         }
+
+         @media screen and (max-width: 394px){
+
+            .prod-item1{
+                margin: 5px;
+                width: 290px;
+                height: 180px;
+            }
+         }
+
+        @media screen and (max-width: 324px){
+
+            .prod-item1{
+                margin: 5px;
+                width: 270px;
+                height: 150px;
+            }
+            .logo{
+                width: 120px;
+                height: 90px;
+                margin-top: 10px;
+                }
+            .btnn{
+                font-size: 1rem;
+                padding: 10px;
+            }
+         }
+
+         @media screen and (max-width: 286px){
+
+            .prod-item1{
+                margin: 5px;
+                width: 199px;
+                height: 140px;
+            }
+            .burger-menu{
+                width: 31px;
+                height: 31px;
+            }
+            .btnn{
+                font-size: 0.88rem;
+                padding: 8px;
+            }
+            .logo{
+                width: 100px;
+                height: 90px;
+                margin-top: 10px;
+                }
+         }
+
+         @media screen and (max-width: 236px){
+            .burger-menu{
+                width: 30px;
+                height: 30px;
+            }
+            .btnn{
+                font-size: 0.78rem;
+                padding: 7px;
+            }
+            .logo{
+                width: 90px;
+                height: 90px;
+                margin-top: 20px;
+                }
+         }

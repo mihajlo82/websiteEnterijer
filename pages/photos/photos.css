@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+/* js hidden menu */
+
+.active-hidden{
+    border: 3px solid rgb(68, 68, 68);
+}
+.hidden-menu-js{
+ display: none;
+ position: fixed;
+ top: 0;
+ left:0;
+ bottom: 0;
+ right: 0;
+ background-color: rgb(255, 255, 255);
+ z-index: 10;
+}
+
+.top-hidden-menu{
+ height: 20vh;
+ width: 100vw;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 30px;
+ padding-top: 10px;
+}
+
+.hidd-close-logo{
+ width: 44px;
+ height: 44px;
+}
+
+.hidd-close-logo:hover{
+ transform: scale(1.2);
+}
+
+.nav-hidd{
+ width:  100vw;
+ height: 80vh;
+}
+
+.nav-hidd ul{
+ width: 100%;
+ height: 100%;
+}
+
+.nav-hidd ul li{
+ width: 100%;
+ height: 15%;
+ border-bottom: 1px solid black;    
+}
+
+.nav-hidd ul li:hover{
+ border: 1px solid rgb(129, 129, 129);
+}
+
+.nav-hidd ul li a{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ font-size: 1.35rem;
+ color: rgb(68, 68, 68);
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.nav-hidd ul li a:hover{
+ color: rgb(129, 129, 129);
+}
+/* js hidden menu END */
+
+
+
+body{
+    width: 100vw;
+    background: url("../../images/background-brown.png");
+}
+
+.about{
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    background: url('../../images/background-brown.png');
+}
+/* ///////////////////////// HEADER STYLING //////////////////////////////////// */
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 17vh;
+    /* background-color: red; */
+    display: flex;
+
+}
+
+.header-left{
+    width: 34%;
+    height:100%;
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background: url("../../images/ent-org.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-right{
+    width: 66%;
+    height:100%;
+    /* background-color: yellow; */
+    display: flex;
+}
+
+        .navigation{
+            width: 100%;
+            height: 100%;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation a{
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        /* .navigation a:hover{
+           
+        } */
+        .hidden-menu{
+            width: 25%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        /* header END */
+
+        .photos-title{
+            position:absolute;
+            top:17%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 17px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.25rem;
+            display: none;
+        }
+        
+
+        .photos-title h1{
+            color: white;
+        }
+
+        .photos-main{
+            position: absolute;
+            top: 17%;
+            left:0;
+            /* right: 0; */
+            width: 100vw;
+            display: flex;
+            padding: 40px;
+            flex-direction: column;
+        }
+
+        .spacer-photos-main{
+            width: 10%;
+        }
+
+        .photos-main-imgs{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 25px;
+        }
+
+       .navigation .active{
+            border: 1px solid white;
+            padding: 10px;
+            background-color: white;
+            color: rgb(53, 25, 1);
+            font-style: italic;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        .img1{
+            widtH: 265px;
+            height: 215px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .img1:hover{
+            transform: scale(1.1);
+        }
+
+        .img{
+            background: url('../../images/i2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .img2{
+            background: url('../../images/i3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .img3{
+            background: url('../../images/i4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .img4{
+            background: url('../../images/i5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img5{
+            background: url('../../images/i6jpg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .img6{
+            background: url('../../images/i7.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .img7{
+            background: url('../../images/i8.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .img8{
+            background: url('../../images/images.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        .contact-rel{
+            /* bottom: 0;
+            left: 0; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+         .contact-rel a{
+            text-decoration: none;
+            font-size: 1.35rem;
+            padding: 19px;
+            background-color: rgb(19, 201, 19);
+            color: white;
+            font-style: italic;
+            border-radius: 10px;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+
+
+        /*/////////////////////////////////////
+               ABOUT RESPONSIVE
+        //////////////////////////////////// */
+
+
+        @media screen and (max-width: 1333px){
+        .photos-main-imgs{
+            padding: 0 0px;
+        }
+
+    }
+
+    @media screen and (max-width: 1222px){
+        .img1{
+            widtH: 220px;
+            height: 215px;
+            margin: 5px;
+        }
+}
+
+        @media screen and (max-width: 1124px){
+
+            .navigation{
+                width: 100%;
+            }
+        
+            .navigation a{
+                font-size: 1.35rem;
+            }
+        }
+
+
+        @media screen and (max-width: 1000px){
+            .img1{
+                widtH: 350px;
+                height: 315px;
+                margin: 5px;
+            }
+            .logo{
+                width: 220px;
+                height: 80px;
+            }
+    }
+        
+        @media screen and (max-width: 948px){
+            .navigation a{
+                font-size: 1.25rem;
+            }
+        }
+        
+        @media screen and (max-width: 823px){
+            .navigation {
+                display: none;
+            }
+
+            .img1{
+                widtH: 290px;
+                height: 275px;
+                margin: 5px;
+            }
+        
+            .hidden-menu{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+            .burger-menu{
+                margin-right: 40px;
+            }
+        
+            .header-left{
+                width: 50%;
+            }
+        
+            .header-right{
+                width: 50%;
+            }
+        
+           
+        }
+
+        @media screen and (max-width: 685px){
+            .photos-main{
+                padding: 20px;
+            }
+           
+            .img1{
+                widtH: 245px;
+                height: 235px;
+                margin: 2px;
+            }
+            .burger-menu{
+                margin-right:0;
+            }
+        }
+        
+        @media screen and (max-width: 576px){
+            .logo{
+                width: 150px;
+                height: 110px;
+                margin-top: 15px;
+            }
+        
+        }
+
+        @media screen and (max-width: 541px){
+            .img1{
+                widtH: 205px;
+                height: 205px;
+                margin: 2px;
+            }
+        }
+        
+
+        @media screen and (max-width: 461px){
+            .img1{
+                widtH: 375px;
+                height: 335px;
+                margin: 1px;
+                margin-top: 5px;
+            }
+        }
+
+        @media screen and (max-width: 444px){
+            .burger-menu{
+                width: 37px;
+                height: 37px;
+            }
+            .logo{
+                width: 150px;
+                height: 110px;
+                margin-top: 15px;
+            }
+         }
+
+        @media screen and (max-width: 399px){
+            .img1{
+                widtH: 300px;
+                height: 225px;
+                margin: 3px 1px;
+            }
+
+            .contact-rel a{
+                font-size: 1.2rem;
+                padding: 13px;
+            }
+        }
+        
+        
+        @media screen and (max-width: 376px){
+            .logo{
+                width: 150px;
+                height: 110px;
+            }
+        }
+
+        @media screen and (max-width: 333px){
+
+
+            .contact-rel a{
+                font-size: 1.05rem;
+                padding: 10px;
+            }
+
+            .logo{
+                width: 120px;
+                height: 100px;
+                margin-top: 15px;
+            }
+        }
+        

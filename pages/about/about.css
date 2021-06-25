@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+
+ /* js hidden menu */
+
+ .active-hidden{
+    border: 3px solid rgb(68, 68, 68);
+}
+.hidden-menu-js{
+ display: none;
+ position: fixed;
+ top: 0;
+ left:0;
+ bottom: 0;
+ right: 0;
+ background-color: rgb(255, 255, 255);
+ z-index: 10;
+}
+
+.top-hidden-menu{
+ height: 20vh;
+ width: 100vw;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 30px;
+ padding-top: 10px;
+}
+
+.hidd-close-logo{
+ width: 44px;
+ height: 44px;
+}
+
+.hidd-close-logo:hover{
+ transform: scale(1.2);
+}
+
+.nav-hidd{
+ width:  100vw;
+ height: 80vh;
+}
+
+.nav-hidd ul{
+ width: 100%;
+ height: 100%;
+}
+
+.nav-hidd ul li{
+ width: 100%;
+ height: 15%;
+ border-bottom: 1px solid black;    
+}
+
+.nav-hidd ul li:hover{
+ border: 1px solid rgb(129, 129, 129);
+}
+
+.nav-hidd ul li a{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ font-size: 1.35rem;
+ color: rgb(68, 68, 68);
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.nav-hidd ul li a:hover{
+ color: rgb(129, 129, 129);
+}
+/* js hidden menu END */
+
+
+.navigation .active{
+    border: 1px solid white;
+     padding: 12px;
+     background-color: white;
+     color: rgb(53, 25, 1);
+     font-style: italic;
+     font-weight: 700;
+     border-radius: 5px;
+ }
+
+
+.about{
+    width: 100vw;
+    min-height: 100vh;
+    background: url('../../images/background-brown.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ///////////////////////// HEADER STYLING //////////////////////////////////// */
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 17vh;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.header-left{
+    width: 34%;
+    height:100%;
+    /* background-color: turquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background: url("../../images/ent-org.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-right{
+    width: 66%;
+    height:100%;
+    /* background-color: yellow; */
+    display: flex;
+}
+
+        .navigation{
+            width: 100%;
+            height: 100%;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .active{
+            
+        } */
+
+        .navigation a{
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        /* .navigation a:hover{
+           
+        } */
+        .hidden-menu{
+            width: 25%;
+            height: 100%;
+            /* background-color: rgb(204, 0, 255); */
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        /* header END */
+
+        .about-main{
+            position: absolute;
+            top:17%;
+            left:0;
+            right: 0;
+            min-height: 83vh;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+                .inner-about-main{
+                    width: 65%;
+
+                    display: flex;
+                    
+                }
+
+
+                    .about-main-left{
+                        width: 60%;
+                        background-color: transparent;
+                    }
+
+                    .inner-left{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: rgb(240, 236, 236);
+                        color:rgb(145, 145, 145)
+                        
+                        
+                    }
+
+                    .about-title{
+                        width: 100%;
+                        font-size: 3rem;
+                        text-align: center;
+                        padding-top: 30px;
+                    }
+
+                    .about-text{
+                        line-height: 1.35;
+                        padding-top: 35px;
+                        width: 90%;
+                        font-size: 1.2rem;
+                    }
+
+                    .about-main-right{
+                        width: 40%;
+                        background: url('../../images/about-close.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .about-btn{
+                        margin: 20px 0;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        padding: 15px;
+                        background-color: rgb(62, 240, 26);
+                        color: white;
+                        border-radius: 5px;
+                    }
+
+        /*/////////////////////////////////////
+               ABOUT RESPONSIVE
+        //////////////////////////////////// */
+
+        @media screen and (max-width: 1224px){
+            .inner-about-main{
+                width: 90%;
+                /* height: 70%; */
+                display: flex;
+            }
+        }
+        
+
+        @media screen and (max-width: 1124px){
+
+            .navigation{
+                width: 100%;
+            }
+        
+            .navigation a{
+                font-size: 1.35rem;
+            }
+        }
+        
+        @media screen and (max-width: 948px){
+
+            .inner-about-main{
+                width: 90%;
+                /* height: 70%; */
+                display: flex;
+            }
+            .navigation a{
+                font-size: 1.25rem;
+            }
+        }
+        
+        @media screen and (max-width: 823px){
+            .navigation {
+                display: none;
+            }
+        
+
+            .about-main{
+                margin-top: 20px;
+                align-items: flex-start;;
+            }
+
+            .hidden-menu{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+        
+            .header-left{
+                width: 50%;
+            }
+        
+            .header-right{
+                width: 50%;
+            }
+
+            .about-main-left{
+                width: 100%;
+                background-color: transparent;
+            }
+
+            .inner-left{
+                background-color:transparent; 
+                color: white             
+            }
+
+
+            .about-main-right{
+                width: 0%;
+            }
+
+            .about-btn{
+                margin-top: 50px;
+            }
+        
+        }
+        
+        @media screen and (max-width: 576px){
+            .logo{
+                width: 170px;
+                height: 130px;
+                margin-top: 25px;
+            }
+        
+        }
+
+         @media screen and (max-width:499px){
+            .about-text{
+                line-height: 1.15;
+                padding-top: 20px;
+                font-size: 1.2rem;
+            }
+         }
+        
+        @media screen and (max-width:444px){
+            .logo{
+                width: 140px;
+                height: 110px;
+                margin-top: 29px;
+            }
+
+            .about-btn{
+                margin-top: 20px;
+            }
+
+            .about-btn{
+                margin: 20px 0;
+                font-size: 1.15rem;
+                padding: 13px;
+            }
+        }
+        
+        
+        @media screen and (max-width: 333px){
+            .about-title{
+                font-size: 2.5rem;
+                padding-top: 20px;
+            }
+            
+            .about-text{
+                padding-top: 20px;
+                width: 92%;
+                font-size: 1.1rem;
+            }
+
+            .logo{
+                width: 120px;
+                height: 95px;
+                margin-top: 25px;
+            }
+        }
+
+        @media screen and (max-width: 269px){
+            .hidden-menu{
+                padding-right: 10px;
+            }
+            .about-title{
+                font-size: 2rem;
+                padding-top: 20px;
+            }
+            .about-text{
+                padding-top: 10px;
+                width: 99%;
+                font-size: 1rem;
+            }
+
+            .about-btn{
+                        margin: 10px 0;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+        }
+
+        @media screen and (max-width: 179px){
+            .logo{
+                width: 85px;
+                height: 70px;
+                margin-top: 25px;
+            }
+            .about-text{
+                padding-top: 10px;
+                width: 99%;
+                font-size: 0.8rem;
+            }
+            .about-btn{
+                margin: 5px 0;
+                text-decoration: none;
+                font-size: 0.7rem;
+                padding: 5px;
+            }
+        }

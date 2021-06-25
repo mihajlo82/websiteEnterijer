@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* js hidden menu */
+
+.active-hidden{
+    border: 3px solid rgb(68, 68, 68);
+}
+.hidden-menu-js{
+ display: none;
+ position: fixed;
+ top: 0;
+ left:0;
+ bottom: 0;
+ right: 0;
+ background-color: rgb(255, 255, 255);
+ z-index: 10;
+}
+
+.top-hidden-menu{
+ height: 20vh;
+ width: 100vw;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding-right: 30px;
+ padding-top: 10px;
+}
+
+.hidd-close-logo{
+ width: 44px;
+ height: 44px;
+}
+
+.hidd-close-logo:hover{
+ transform: scale(1.2);
+}
+
+.nav-hidd{
+ width:  100vw;
+ height: 80vh;
+}
+
+.nav-hidd ul{
+ width: 100%;
+ height: 100%;
+}
+
+.nav-hidd ul li{
+ width: 100%;
+ height: 15%;
+ border-bottom: 1px solid black;    
+}
+
+.nav-hidd ul li:hover{
+ border: 1px solid rgb(129, 129, 129);
+}
+
+.nav-hidd ul li a{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ font-size: 1.35rem;
+ color: rgb(68, 68, 68);
+ font-weight: bold;
+ text-decoration: none;
+}
+
+.nav-hidd ul li a:hover{
+ color: rgb(129, 129, 129);
+}
+/* js hidden menu END */
+
+
+.navigation .active{
+    border: 1px solid white;
+    padding: 12px;
+    background-color: white;
+    color: rgb(53, 25, 1);
+    font-style: italic;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+body{
+    background: url('../../images/background-brown.png'); 
+    width: 100vw;
+}
+.about{
+    width: 100%;
+}
+/* ///////////////////////// HEADER STYLING //////////////////////////////////// */
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    height: 17vh;
+    background-color: transparent;
+    display: flex;
+
+}
+
+.header-left{
+    width: 34%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 250px;
+    height: 100px;
+    background: url("../../images/ent-org.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-right{
+    width: 66%;
+    height:100%;
+    display: flex;
+}
+
+        .navigation{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation a{
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            color: white;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        .hidden-menu{
+            width: 25%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        /* header END */
+
+        
+        .contact-main{
+            position: absolute;
+            top: 22%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-text{
+            width: 100%;
+            padding: 20px;
+            font-size: 1.07rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .title-text p{
+            width: 60%;
+            color: white;
+            font-family: 'Architects Daughter', cursive;
+        }
+
+        .line-horizontal{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .line-horizontal span{
+            width: 10%;
+            height: 1px;
+            color:white;
+            background-color: white;
+        }
+
+        .contact-elements{
+            width: 56%;
+            display: flex;
+            margin-top: 35px;
+        }
+
+        .contact-main-element{
+            padding-top: 30px;
+            width: 44%;
+            display:flex;
+            flex-direction: column;
+            background-color: rgb(126, 126, 126);
+            align-items: flex-start;
+        }
+
+        .conta-item{
+            display: flex;
+            margin-top: 0px;
+            padding: 10px;
+        }
+
+        .social-it{
+            padding-top: 15px;
+            padding-left: 7px;
+            color: white;
+            font-style: italic;
+        }
+
+        .map-contact{
+            width: 56%;
+        }
+
+        .map{
+            widtH: 100%;
+            height: 100%;
+        }
+
+        /*/////////////////////////////////////
+               ABOUT RESPONSIVE
+        //////////////////////////////////// */
+        @media screen and (max-width: 1324px){
+            .title-text{
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+
+        @media screen and (max-width: 1204px){
+            .contact-elements{
+                width: 77%;
+            }
+        }
+
+        @media screen and (max-width: 1124px){
+            .navigation{
+                width: 100%;
+            }
+        
+            .navigation a{
+                font-size: 1.35rem;
+            }
+        }
+           @media screen and (max-width: 1008px){
+                .title-text{
+                    font-size: 1.0rem;
+                }
+                .logo{
+                    width: 170px;
+                    height: 90px;
+                    background: url("../../images/ent-org.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+           }
+        
+        @media screen and (max-width: 948px){
+            .navigation a{
+                font-size: 1.25rem;
+            }
+            .social-it{
+                font-size: 0.9rem;
+            }
+
+            .icon-soc{
+                width: 40px;
+                height: 40px;
+            }
+
+
+        }
+        
+        @media screen and (max-width: 823px){
+            .navigation {
+                display: none;
+            }
+
+            .contact-elements{
+                width: 86%;
+                display: flex;
+                margin-top: 35px;
+            }
+
+            .logo{
+                margin-top: 10px;
+                width: 188px;
+                height: 75px;
+            }
+
+            .hidden-menu{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 40px;
+            }
+        
+            .header-left{
+                width: 50%;
+            }
+        
+            .header-right{
+                width: 50%;
+            }
+
+            .contact-main-element{
+                padding-top: 5px;
+            }
+        }
+        
+        @media screen and (max-width: 576px){
+          
+            .contact-elements{
+                width: 70%;
+            }
+
+            .title-text{
+                font-size: 0.85rem;
+            }
+            .contact-elements{
+                flex-direction: column;
+            }
+            .social-it{
+                font-size: 1rem;
+            }
+
+            .contact-main-element{
+                width: 100%;
+            }
+
+            .burger-menu{
+                margin-right: 40px;
+                width: 37px;
+                height: 37px;
+            }
+
+            .map-contact{
+                width: 100%;
+            }
+            .logo{
+                margin-top: 0px;
+                width: 120px;
+                height: 60px;
+            }
+        }
+        
+        @media screen and (max-width: 376px){
+            .logo{
+                margin-top: 0px;
+                width: 120px;
+                height: 60px;
+            }
+
+            .icon-soc{
+                width: 35px;
+                height: 35px;
+            }
+
+            .hidden-menu{
+                padding-right: 15px;
+            }
+            .social-it{
+                font-size: 0.86rem;
+            }
+            .contact-elements{
+                margin-top: 25px;
+            }
+            
+        }
+
+        @media screen and (max-width: 306px){
+            .social-it{
+                font-size: 0.8rem;
+            }
+        }
+
+        @media screen and (max-width: 276px){
+            .contact-main-element{
+                background-color: transparent;
+            }
+
+            .burger-menu{
+                margin-right: 5px;
+                width: 31px;
+                height: 31px; 
+            }
+            .logo{
+                width: 90px;
+                height: 70px;
+                margin-top: 14px;
+            }
+
+        }
